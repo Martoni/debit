@@ -3,6 +3,8 @@ SUBDIRS = data debian doc rpm windows altera utils xiledit xdl desktop tests cod
 AM_CPPFLAGS	= -DDATADIR=\"$(pkgdatadir)\"
 AM_CFLAGS	= -O3
 
+AUTOMAKE_OPTIONS=subdir-objects
+
 SHARED_SRC	= bitarray.c bitarray.h \
 		bitheader.c bitheader.h \
 		filedump.c filedump.h \

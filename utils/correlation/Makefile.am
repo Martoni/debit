@@ -1,6 +1,8 @@
 AM_CPPFLAGS	= -I$(top_srcdir)
 AM_CFLAGS	= -O3
 
+AUTOMAKE_OPTIONS=subdir-objects
+
 bin_PROGRAMS		= bitisolation
 bitisolation_SOURCES	= state_db.c pip_db.c bitisolation.c \
 			$(top_srcdir)/altera/bitarray.c algo_basic.c \
