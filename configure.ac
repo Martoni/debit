@@ -5,7 +5,7 @@ AC_INIT([debit], [0.1], [jean-baptiste.note@m4x.org])
 AC_CONFIG_SRCDIR([debit.c])
 AC_CONFIG_HEADER([config.h])
 
-AM_INIT_AUTOMAKE([1.9 -Wall dist-bzip2])
+AM_INIT_AUTOMAKE([1.9 -Wall -Wno-portability dist-bzip2])
 
 dnl Checks for programs
 AC_PROG_CC
