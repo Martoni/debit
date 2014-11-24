@@ -19,7 +19,6 @@
 #include "design_v2.h"
 #include "bitstream.h"
 
-#define YYPARSE_PARAM yyparm
 #define YYDEBUG 1
 
 void yyerror(char *err) {
@@ -216,6 +215,7 @@ static int treat_design(parser_t *parser,
 
 /* Options */
 %pure-parser
+%parse-param {void *yyparm}
 
 %union {
   char *name;
