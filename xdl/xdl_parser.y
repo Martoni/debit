@@ -21,7 +21,7 @@
 
 #define YYDEBUG 1
 
-void yyerror(char *err) {
+void yyerror(void *param, char const *err) {
   debit_log(L_PARSER, "XDL parser error: %s", err);
 }
 
